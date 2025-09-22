@@ -1,0 +1,13 @@
+import pytest
+from ExDebug1 import environnement_optimal
+
+def test_environnemnt_optimal():
+    temperature = 25
+    poussière = "faible"
+    humidite = 40
+    resultat_attendu = "Tout est sous contrôle"
+
+
+resultat_obtenu = environnement_optimal(temperature, poussiere, humidite)
+
+assert resultat_attendu == resultat_obtenu
